@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.wrapper {
+	width:100vw;
+	height:100vw;
+	position: fixed;
+	display:flex;
+	justify-content: flex-start;
+	align-content:  space-between;
+	flex-direction: column;
+}	
+.picture{
+	/*position : absolute;*/
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin:0 auto;
+	width:70%;
+	height:40%;
+	border:solid; 
+	box-shadow: 10px 15px grey;
+	transition: box-shadow  1s;
+}	
+.buttons_div{
+	margin-top:10px;
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.prev , .next{
+margin:2vw;
+width:50px;
+height:40px;
+border-radius: 5px 5px;
+box-shadow: 5px 10px grey;
+transition:box-shadow 1s;
+transition:all 0,5s;
+}
+.prev:hover{
+	box-shadow: 7px 12px black;
+} 
+.next:hover{
+	
+	box-shadow: 7px 12px black;
+	 
+}
+.picture:hover{
+	box-shadow: 12px 17px black;
+}
+.preview{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+.preview>*{
+	box-shadow: 5px 10px grey;
+	margin-left:15px;
+	opacity:0.8;
+	transition: all 1s;
+}
+.preview>*:hover{
+	opacity: 1;
+	box-shadow: 12px 17px black;
+	
+	
+}
+.prev:active{
+	width:49px;
+	height:39px;
+	transform: rotate(-10deg);
+}
+.next:active{
+	width:49px;
+	height:39px;
+	transform: rotate(10deg);
+}
+@keyframes show{
+0%{
+opacity:1;
+}
+100% {
+opacity:0;
+}
+}
