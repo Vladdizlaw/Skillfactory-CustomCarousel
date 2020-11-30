@@ -47,9 +47,7 @@ function throwPicture(arr,element,count,width,height){
 	image.style=`width:${width}%;height:${height}%;`
 	let oldImage = document.getElementById('current')
 	if (oldImage){	
-		oldImage.setAttribute('class','old')
-		oldImage.style=`opacity:1;transition: 1s;animation: show 1.5s 1;animation-fill-mode: forwards;`
-		oldImage.remove()
+	oldImage.remove()
 	}
 	
 	element.append(image)
